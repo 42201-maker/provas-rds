@@ -10,7 +10,7 @@
  */
 const CONFIG = {
   // Deixe vazio ('') para usar a mesma origem do site (recomendado).
-  PROD_API_URL: 'https://provas-rds-p9dz.vercel.app',
+  PROD_API_URL: '',
 
   // URL para testes em ambiente local (porta do backend: PORT=3000 no .env)
   LOCAL_API_URL: 'http://localhost:3000/api',
