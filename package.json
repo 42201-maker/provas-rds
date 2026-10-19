@@ -1,0 +1,23 @@
+{
+  "name": "sistema-setor-provas",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Deploy unificado na Vercel (frontend estático + API serverless em /api). Código da API em backend/.",
+  "//": "As dependências abaixo espelham backend/package.json. A Vercel instala a partir deste arquivo para a função em api/index.js. Ao alterar dependências do backend, replique aqui.",
+  "scripts": {
+    "start": "node backend/src/app.js",
+    "seed": "node backend/scripts/seed.js"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.712.0",
+    "@vercel/blob": "^0.27.1",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.8.4",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1"
+  }
+}
